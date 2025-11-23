@@ -1,0 +1,839 @@
+.retro-browser-window {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #808080;
+  box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #808080;
+}
+
+.retro-browser-titlebar {
+  background: linear-gradient(to right, #003c7a, #7ab2e6);
+  color: #ffffff;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: move;
+  user-select: none;
+}
+
+.retro-browser-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.retro-browser-icon {
+  font-size: 14px;
+}
+
+.retro-browser-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.retro-browser-btn {
+  width: 18px;
+  height: 16px;
+  border: 1px outset #c0c0c0;
+  background: #dcdcdc;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.retro-browser-btn:hover {
+  background: #f0f0f0;
+}
+
+.retro-browser-btn:active {
+  border: 1px inset #c0c0c0;
+  background: #d0d0d0;
+}
+
+.retro-browser-close {
+  font-weight: bold;
+}
+
+.retro-browser-toolbar {
+  background: #d4d0c8;
+  border-bottom: 1px solid #808080;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.retro-browser-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.retro-toolbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  padding: 2px 8px;
+  border: 1px solid #808080;
+  background: #f5f5f5;
+  cursor: pointer;
+  box-shadow: inset 1px 1px 0 #ffffff;
+}
+
+.retro-toolbar-btn:hover {
+  background: #ffffff;
+}
+
+.retro-toolbar-btn:active {
+  box-shadow: inset -1px -1px 0 #ffffff;
+  background: #dcdcdc;
+}
+
+.retro-toolbar-icon {
+  font-size: 10px;
+}
+
+.retro-browser-address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.retro-address-label {
+  font-size: 11px;
+  color: #000000;
+}
+
+.retro-address-input {
+  flex: 1;
+  font-size: 11px;
+  padding: 2px 4px;
+  border: 1px inset #c0c0c0;
+  background: #ffffff;
+  color: #000000;
+}
+
+.retro-browser-content {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.retro-browser-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  text-align: center;
+  gap: 16px;
+}
+
+.retro-google-logo {
+  font-family: 'Times New Roman', serif;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.retro-google-letter {
+  display: inline-block;
+}
+
+.retro-google-letter--g {
+  color: #1a3cba;
+}
+
+.retro-google-letter--o {
+  color: #d6422b;
+}
+
+.retro-google-letter--second {
+  margin-left: -6px;
+}
+
+.retro-google-letter--l {
+  color: #1a3cba;
+}
+
+.retro-google-letter--e {
+  color: #1a9335;
+}
+
+.retro-google-letter--bang {
+  color: #d69a1a;
+}
+
+.retro-google-search {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(500px, 100%);
+}
+
+.retro-google-label {
+  font-size: 12px;
+  color: #333333;
+}
+
+.retro-google-input {
+  padding: 6px;
+  font-size: 14px;
+  border: 2px inset #c0c0c0;
+  background: #ffffff;
+  color: #000000;
+}
+
+.retro-google-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.retro-google-btn {
+  padding: 4px 12px;
+  font-size: 12px;
+  border: 1px solid #808080;
+  background: #f0f0f0;
+  cursor: pointer;
+  box-shadow: inset 1px 1px 0 #ffffff;
+}
+
+.retro-google-btn:hover {
+  background: #ffffff;
+}
+
+.retro-google-btn:active {
+  box-shadow: inset -1px -1px 0 #ffffff;
+  background: #dcdcdc;
+}
+
+.retro-google-links {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.retro-google-links a {
+  color: #1a3cba;
+  text-decoration: none;
+}
+
+.retro-google-links a:hover {
+  text-decoration: underline;
+}
+
+.retro-browser-footer {
+  border-top: 1px solid #c0c0c0;
+  background: #f5f5f5;
+  padding: 8px 16px;
+  font-size: 10px;
+  text-align: center;
+  color: #333333;
+}
+
+.retro-browser-statusbar {
+  height: 20px;
+  background: #d4d0c8;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 10px;
+  color: #000000;
+}
+
+.retro-status-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.retro-status-right {
+  font-style: italic;
+}
+
+.retro-browser-window .resize-handle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(
+    135deg,
+    #c0c0c0 0%,
+    #c0c0c0 25%,
+    #808080 25%,
+    #808080 50%,
+    #c0c0c0 50%,
+    #c0c0c0 75%,
+    #808080 75%,
+    #808080 100%
+  );
+  cursor: nw-resize;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+  z-index: 10;
+}
+
+/* Search Results Styles */
+.retro-google-results {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.retro-results-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.retro-google-logo-small {
+  font-family: 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.retro-results-search {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.retro-results-search .retro-google-input {
+  flex: 1;
+  max-width: 400px;
+}
+
+.retro-results-stats {
+  font-size: 11px;
+  color: #666666;
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.retro-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.retro-result-item {
+  padding: 8px 4px;
+}
+
+.retro-result-title {
+  font-size: 16px;
+  color: #1a3cba;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+
+.retro-result-title:hover {
+  text-decoration: underline;
+}
+
+.retro-result-url {
+  font-size: 12px;
+  color: #006621;
+  margin-bottom: 4px;
+}
+
+.retro-result-description {
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.4;
+}
+
+/* Retro YouTube Styles */
+.retro-youtube-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  overflow-y: auto;
+}
+
+.retro-youtube-header {
+  background: #c41200;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #8b0a00;
+}
+
+.retro-youtube-logo {
+  display: flex;
+  align-items: center;
+}
+
+.retro-youtube-logo-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+.retro-youtube-nav {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+
+.retro-youtube-nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.retro-youtube-nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.retro-youtube-search-box {
+  display: flex;
+  gap: 4px;
+}
+
+.retro-youtube-search-input {
+  padding: 4px 8px;
+  border: 1px solid #808080;
+  font-size: 12px;
+  width: 200px;
+}
+
+.retro-youtube-search-btn {
+  padding: 4px 12px;
+  background: #f0f0f0;
+  border: 1px solid #808080;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.retro-youtube-search-btn:hover {
+  background: #e0e0e0;
+}
+
+.retro-youtube-main {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.retro-youtube-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.retro-youtube-player-container {
+  margin-bottom: 16px;
+}
+
+.retro-youtube-player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  border: 2px solid #c0c0c0;
+  margin-bottom: 12px;
+}
+
+.retro-youtube-player iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.retro-youtube-video-info {
+  padding: 8px 0;
+}
+
+.retro-youtube-video-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.retro-youtube-video-meta {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.retro-youtube-view-btn {
+  padding: 2px 8px;
+  background: #f0f0f0;
+  border: 1px solid #808080;
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.retro-youtube-view-btn:hover {
+  background: #e0e0e0;
+}
+
+.retro-youtube-actions {
+  margin-bottom: 12px;
+}
+
+.retro-youtube-like-btn {
+  padding: 6px 12px;
+  background: #f0f0f0;
+  border: 1px solid #808080;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.retro-youtube-like-btn:hover {
+  background: #e0e0e0;
+}
+
+.retro-youtube-views,
+.retro-youtube-date {
+  margin-right: 8px;
+}
+
+.retro-youtube-channel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.retro-youtube-channel-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #c41200;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.retro-youtube-channel-info {
+  flex: 1;
+}
+
+.retro-youtube-channel-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.retro-youtube-channel-subs {
+  font-size: 12px;
+  color: #666666;
+}
+
+.retro-youtube-subscribe-btn {
+  padding: 6px 16px;
+  background: #c41200;
+  color: #ffffff;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.retro-youtube-subscribe-btn:hover {
+  background: #8b0a00;
+}
+
+.retro-youtube-comments {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.retro-youtube-add-comment {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.retro-youtube-comment-input,
+.retro-youtube-reply-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #c0c0c0;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+  margin-bottom: 8px;
+}
+
+.retro-youtube-comment-form-actions,
+.retro-youtube-reply-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.retro-youtube-comment-submit-btn,
+.retro-youtube-reply-submit-btn {
+  padding: 6px 16px;
+  background: #c41200;
+  color: #ffffff;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.retro-youtube-comment-submit-btn:hover,
+.retro-youtube-reply-submit-btn:hover {
+  background: #8b0a00;
+}
+
+.retro-youtube-cancel-btn {
+  padding: 6px 16px;
+  background: #f0f0f0;
+  border: 1px solid #808080;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.retro-youtube-cancel-btn:hover {
+  background: #e0e0e0;
+}
+
+.retro-youtube-reply-form {
+  margin-top: 12px;
+  margin-left: 44px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-left: 2px solid #e0e0e0;
+}
+
+.retro-youtube-replies {
+  margin-top: 12px;
+  margin-left: 44px;
+  padding-left: 12px;
+  border-left: 2px solid #e0e0e0;
+}
+
+.retro-youtube-reply {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.retro-youtube-comments-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 16px 0;
+}
+
+.retro-youtube-comment {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.retro-youtube-comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #c41200;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.retro-youtube-comment-content {
+  flex: 1;
+}
+
+.retro-youtube-comment-author {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.retro-youtube-comment-text {
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.retro-youtube-comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.retro-youtube-comment-action {
+  background: none;
+  border: none;
+  color: #666666;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+}
+
+.retro-youtube-comment-action:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.retro-youtube-comment-time {
+  color: #999999;
+  font-size: 11px;
+}
+
+.retro-youtube-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.retro-youtube-sidebar-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 12px 0;
+}
+
+.retro-youtube-suggestion {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.retro-youtube-suggestion:hover {
+  background: #f5f5f5;
+}
+
+.retro-youtube-suggestion-thumbnail {
+  width: 120px;
+  height: 90px;
+  background: #000000;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c0c0c0;
+}
+
+.retro-youtube-thumbnail-placeholder {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.retro-youtube-suggestion-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.retro-youtube-suggestion-title {
+  font-size: 13px;
+  font-weight: normal;
+  color: #000000;
+  margin-bottom: 4px;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.retro-youtube-suggestion-channel {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 2px;
+}
+
+.retro-youtube-suggestion-views {
+  font-size: 11px;
+  color: #999999;
+}
+
+@media (max-width: 900px) {
+  .retro-youtube-main {
+    flex-direction: column;
+  }
+  
+  .retro-youtube-sidebar {
+    width: 100%;
+  }
+}
+
+/* Retro CV/Resume Styles */
+.retro-cv-page {
+  flex: 1;
+  display: flex;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.retro-cv-pdf {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #ffffff;
+}
+

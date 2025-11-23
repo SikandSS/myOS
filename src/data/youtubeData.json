@@ -1,0 +1,85 @@
+{
+  "video": {
+    "id": "dQw4w9WgXcQ",
+    "title": "Rick Astley - Never Gonna Give You Up (Official Video)",
+    "channel": {
+      "name": "RickAstleyVEVO",
+      "subscribers": "12.3M subscribers",
+      "avatar": "R"
+    },
+    "views": 17,
+    "likes": 3,
+    "date": "Oct 30, 2024",
+    "publishedDate": "Oct 25, 2009"
+  },
+  "comments": [
+    {
+      "id": 1,
+      "author": "User123",
+      "avatar": "U",
+      "text": "This is a classic! Never gets old. Thanks for sharing!",
+      "likes": 45,
+      "replies": [
+        {
+          "id": 101,
+          "author": "ReplyUser1",
+          "avatar": "R",
+          "text": "Totally agree!",
+          "likes": 5,
+          "date": "1 hour ago"
+        }
+      ],
+      "date": "2 hours ago"
+    },
+    {
+      "id": 2,
+      "author": "AwesomeViewer",
+      "avatar": "A",
+      "text": "I remember when this first came out. Good times!",
+      "likes": 32,
+      "replies": [],
+      "date": "5 hours ago"
+    },
+    {
+      "id": 3,
+      "author": "MusicLover99",
+      "avatar": "M",
+      "text": "The best song ever! Can't stop listening to it.",
+      "likes": 78,
+      "replies": [],
+      "date": "1 day ago"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": 1,
+      "title": "Top 10 Songs of the 80s",
+      "channel": "MusicChannel",
+      "views": "2.5M views"
+    },
+    {
+      "id": 2,
+      "title": "Best 80s Music Playlist",
+      "channel": "RetroMusic",
+      "views": "1.8M views"
+    },
+    {
+      "id": 3,
+      "title": "Classic Pop Hits Collection",
+      "channel": "PopClassics",
+      "views": "3.2M views"
+    },
+    {
+      "id": 4,
+      "title": "80s Dance Music Mix",
+      "channel": "DanceMix",
+      "views": "950K views"
+    },
+    {
+      "id": 5,
+      "title": "Nostalgic Music Videos",
+      "channel": "NostalgiaTV",
+      "views": "1.1M views"
+    }
+  ]
+}

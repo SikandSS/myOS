@@ -1,0 +1,377 @@
+/* Windows 95 Desktop Styles */
+.windows95-desktop {
+  width: 100vw;
+  height: 100vh;
+  background: #008080; /* Classic Windows 95 teal background */
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 11px;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+
+/* Desktop Background */
+.desktop-background {
+  width: 100%;
+  height: calc(100% - 40px); /* Account for taskbar height */
+  background: #008080;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../../assets/background-art.jpg');
+}
+
+/* Desktop Icons */
+.desktop-icon {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.desktop-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px dotted #000;
+}
+
+.desktop-icon:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.icon-image {
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.icon-label {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  text-shadow: 1px 1px 0px #000;
+}
+
+/* Windows */
+.window {
+  position: absolute;
+  background: #c0c0c0;
+  border: 2px outset #c0c0c0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  min-width: 200px;
+  min-height: 150px;
+  resize: both;
+  overflow: hidden;
+}
+
+.window.dragging {
+  cursor: move;
+  user-select: none;
+}
+
+/* Resize handles */
+.window::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(
+    135deg,
+    #c0c0c0 0%,
+    #c0c0c0 25%,
+    #808080 25%,
+    #808080 50%,
+    #c0c0c0 50%,
+    #c0c0c0 75%,
+    #808080 75%,
+    #808080 100%
+  );
+  cursor: nw-resize;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+}
+
+.window-titlebar {
+  background: linear-gradient(to right, #0a246a, #a6caf0);
+  color: white;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: move;
+  user-select: none;
+}
+
+.window-title {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.window-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.window-controls button {
+  width: 16px;
+  height: 14px;
+  border: 1px outset #c0c0c0;
+  background: #c0c0c0;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window-controls button:hover {
+  background: #d4d0c8;
+}
+
+.window-controls button:active {
+  border: 1px inset #c0c0c0;
+}
+
+.close-btn {
+  color: #000;
+  font-weight: bold;
+}
+
+.window-content {
+  padding: 8px;
+  background: #c0c0c0;
+  height: calc(100% - 20px);
+  overflow: auto;
+  font-size: 11px;
+  color: #000;
+}
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #c0c0c0;
+  border-top: 1px solid #808080;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.start-button {
+  background: #c0c0c0;
+  border: 1px outset #c0c0c0;
+  height: 32px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.start-button:hover {
+  background: #d4d0c8;
+}
+
+.start-button:active {
+  border: 1px inset #c0c0c0;
+}
+
+.start-icon {
+  font-size: 14px;
+}
+
+.taskbar-items {
+  flex: 1;
+  display: flex;
+  gap: 2px;
+  margin: 0 4px;
+}
+
+.taskbar-item {
+  background: #c0c0c0;
+  border: 1px outset #c0c0c0;
+  height: 32px;
+  padding: 0 12px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.taskbar-item:hover {
+  background: #d4d0c8;
+}
+
+.taskbar-item:active {
+  border: 1px inset #c0c0c0;
+}
+
+.system-tray {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 4px;
+}
+
+.clock {
+  background: #c0c0c0;
+  border: 1px inset #c0c0c0;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: 'MS Sans Serif', monospace;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+/* Start Menu */
+.start-menu {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  width: 200px;
+  background: #c0c0c0;
+  border: 2px outset #c0c0c0;
+  z-index: 1001;
+  box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.start-menu-header {
+  background: linear-gradient(to right, #0a246a, #a6caf0);
+  color: white;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.start-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 11px;
+  gap: 8px;
+}
+
+.start-menu-item:hover {
+  background: #0a246a;
+  color: white;
+}
+
+.start-menu-icon {
+  width: 16px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.start-menu-text {
+  flex: 1;
+}
+
+/* Windows 95 specific styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #008080;
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 11px;
+}
+
+/* Scrollbar styling for Windows 95 look */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 1px inset #c0c0c0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 1px outset #c0c0c0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d0c8;
+}
+
+::-webkit-scrollbar-corner {
+  background: #c0c0c0;
+}
+
+/* Button styling */
+button {
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 11px;
+}
+
+/* Input styling */
+input, textarea, select {
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 11px;
+  border: 1px inset #c0c0c0;
+  background: white;
+  padding: 2px;
+}
+
+/* Focus styles */
+button:focus, input:focus, textarea:focus, select:focus {
+  outline: 1px dotted #000;
+}
+
+/* Selection styles */
+::selection {
+  background: #0a246a;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .desktop-icon {
+    width: 50px;
+    height: 70px;
+  }
+  
+  .icon-image {
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+  }
+  
+  .icon-label {
+    font-size: 9px;
+  }
+  
+  .window {
+    min-width: 300px;
+    min-height: 200px;
+  }
+}
