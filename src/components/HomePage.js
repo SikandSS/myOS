@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Terminal from './Terminal';
 import RetroBrowser from './RetroBrowser';
 import Notepad from './Notepad';
+import MusicPlayer from './MusicPlayer';
+import ContactMe from './ContactMe';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -15,7 +17,8 @@ const HomePage = () => {
   const desktopIcons = [
     { id: 1, name: 'Internet Explorer', icon: '🌍', x: 50, y: 50 },
     { id: 2, name: 'Notepad', icon: '📝', x: 50, y: 120 },
-    { id: 3, name: 'Terminal', icon: '🖥️', x: 50, y: 190 }
+    { id: 3, name: 'Terminal', icon: '🖥️', x: 50, y: 190 },
+    { id: 4, name: 'Contact Me', icon: '✉', x: 50, y: 260 }
   ];
 
   const startMenuItems = [
@@ -45,6 +48,10 @@ const HomePage = () => {
       windowType = 'notepad';
       defaultWidth = 500;
       defaultHeight = 400;
+    } else if (iconName === 'Contact Me') {
+      windowType = 'contact';
+      defaultWidth = 600;
+      defaultHeight = 500;
     }
 
     const newWindow = {
@@ -78,7 +85,8 @@ const HomePage = () => {
       e.target.classList.contains('window-titlebar') || e.target.closest('.window-titlebar') ||
       e.target.classList.contains('terminal-titlebar') || e.target.closest('.terminal-titlebar') ||
       e.target.classList.contains('retro-browser-titlebar') || e.target.closest('.retro-browser-titlebar') ||
-      e.target.classList.contains('notepad-titlebar') || e.target.closest('.notepad-titlebar')
+      e.target.classList.contains('notepad-titlebar') || e.target.closest('.notepad-titlebar') ||
+      e.target.classList.contains('contact-me-titlebar') || e.target.closest('.contact-me-titlebar')
     ) {
       e.preventDefault();
       setDragging(true);
@@ -140,6 +148,9 @@ const HomePage = () => {
 
   return (
     <div className="windows95-desktop">
+      {/* Music Player */}
+      <MusicPlayer />
+      
       {/* Desktop Background */}
       <div className="desktop-background">
         {/* Desktop Icons */}
@@ -183,6 +194,12 @@ const HomePage = () => {
               />
             ) : window.type === 'notepad' ? (
               <Notepad
+                onClose={() => closeWindow(window.id)}
+                onMinimize={() => {/* TODO: Implement minimize */}}
+                onMaximize={() => {/* TODO: Implement maximize */}}
+              />
+            ) : window.type === 'contact' ? (
+              <ContactMe
                 onClose={() => closeWindow(window.id)}
                 onMinimize={() => {/* TODO: Implement minimize */}}
                 onMaximize={() => {/* TODO: Implement maximize */}}

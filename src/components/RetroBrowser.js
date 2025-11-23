@@ -514,7 +514,7 @@ const RetroBrowser = ({ title, onClose, onMinimize, onMaximize }) => {
               </form>
             </div>
             <div className="retro-results-stats">
-              Results 1-2 of about 2 for <strong>&quot;{query}&quot;</strong>
+              Results 1-3 of about 3 for <strong>&quot;{query}&quot;</strong>
             </div>
             <div className="retro-results-list">
               <div className="retro-result-item">
@@ -533,6 +533,15 @@ const RetroBrowser = ({ title, onClose, onMinimize, onMaximize }) => {
                 <div className="retro-result-url">https://www.sikandsandhu.com</div>
                 <div className="retro-result-description">
                   Software Engineer at Map My India. View my portfolio, experience, and projects. 3+ years of experience in mapping and traffic solutions.
+                </div>
+              </div>
+              <div className="retro-result-item">
+                <a href="https://sikand.medium.com/optimizing-map-layers-a39a15f236a9" target="_blank" rel="noopener noreferrer" className="retro-result-title">
+                  Optimizing Map Layers - Medium Article
+                </a>
+                <div className="retro-result-url">https://sikand.medium.com/optimizing-map-layers-a39a15f236a9</div>
+                <div className="retro-result-description">
+                  Technical article about optimizing map layers for better performance. Learn about best practices for map layer management and optimization techniques.
                 </div>
               </div>
             </div>

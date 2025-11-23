@@ -1,0 +1,287 @@
+/* Contact Me Window Styles - Outlook Theme */
+.contact-me-window {
+  width: 100%;
+  height: 100%;
+  background: #c0c0c0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  border: 2px outset #c0c0c0;
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 11px;
+}
+
+.contact-me-titlebar {
+  background: linear-gradient(to right, #0a246a, #a6caf0);
+  color: white;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: move;
+  user-select: none;
+}
+
+.contact-me-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.contact-me-icon {
+  font-size: 14px;
+}
+
+.contact-me-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.contact-me-controls button {
+  width: 16px;
+  height: 14px;
+  border: 1px outset #c0c0c0;
+  background: #c0c0c0;
+  font-size: 10px;
+  line-height: 1;
+  cursor: pointer;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.contact-me-controls button:hover {
+  background: #d4d0c8;
+}
+
+.contact-me-controls button:active {
+  border: 1px inset #c0c0c0;
+}
+
+.contact-me-close {
+  font-weight: bold;
+}
+
+.contact-me-menu {
+  background: #c0c0c0;
+  border-bottom: 1px solid #808080;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  height: 20px;
+  gap: 8px;
+}
+
+.contact-me-menu-item {
+  padding: 2px 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.contact-me-menu-item:hover {
+  background: #d4d0c8;
+}
+
+.contact-me-toolbar {
+  background: #c0c0c0;
+  border-bottom: 1px solid #808080;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  height: 28px;
+}
+
+.contact-me-toolbar-btn {
+  height: 20px;
+  padding: 2px 8px;
+  border: 1px outset #c0c0c0;
+  background: #c0c0c0;
+  font-size: 11px;
+  cursor: pointer;
+  font-family: 'MS Sans Serif', sans-serif;
+}
+
+.contact-me-toolbar-btn:hover {
+  background: #d4d0c8;
+}
+
+.contact-me-toolbar-btn:active {
+  border: 1px inset #c0c0c0;
+}
+
+.contact-me-toolbar-separator {
+  width: 1px;
+  height: 20px;
+  background: #808080;
+  margin: 0 4px;
+}
+
+.contact-me-content {
+  flex: 1;
+  background: #ffffff;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.contact-me-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-me-message-field {
+  flex: 1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-me-label {
+  min-width: 60px;
+  font-weight: bold;
+  color: #000;
+  font-size: 11px;
+}
+
+.contact-me-input {
+  flex: 1;
+  height: 20px;
+  border: 1px inset #808080;
+  background: #ffffff;
+  padding: 2px 4px;
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 11px;
+  outline: none;
+}
+
+.contact-me-input:focus {
+  border: 1px inset #000080;
+}
+
+.contact-me-textarea {
+  flex: 1;
+  width: 100%;
+  border: 1px inset #808080;
+  background: #ffffff;
+  padding: 4px;
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 11px;
+  resize: none;
+  outline: none;
+  min-height: 200px;
+}
+
+.contact-me-textarea:focus {
+  border: 1px inset #000080;
+}
+
+.contact-me-status {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 2px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.contact-me-status.success {
+  background: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.contact-me-status.error {
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.contact-me-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  padding-top: 8px;
+  border-top: 1px solid #c0c0c0;
+}
+
+.contact-me-submit-btn {
+  height: 24px;
+  padding: 2px 16px;
+  border: 1px outset #c0c0c0;
+  background: #c0c0c0;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'MS Sans Serif', sans-serif;
+  min-width: 80px;
+}
+
+.contact-me-submit-btn:hover:not(:disabled) {
+  background: #d4d0c8;
+}
+
+.contact-me-submit-btn:active:not(:disabled) {
+  border: 1px inset #c0c0c0;
+}
+
+.contact-me-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-me-cancel-btn {
+  height: 24px;
+  padding: 2px 16px;
+  border: 1px outset #c0c0c0;
+  background: #c0c0c0;
+  font-size: 11px;
+  cursor: pointer;
+  font-family: 'MS Sans Serif', sans-serif;
+}
+
+.contact-me-cancel-btn:hover {
+  background: #d4d0c8;
+}
+
+.contact-me-cancel-btn:active {
+  border: 1px inset #c0c0c0;
+}
+
+/* Scrollbar styling */
+.contact-me-content::-webkit-scrollbar {
+  width: 16px;
+}
+
+.contact-me-content::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 1px inset #808080;
+}
+
+.contact-me-content::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 1px outset #c0c0c0;
+}
+
+.contact-me-content::-webkit-scrollbar-thumb:hover {
+  background: #d4d0c8;
+}
+
